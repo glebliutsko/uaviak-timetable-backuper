@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "uaviak-timetable-backuper"
+version = "1.0.0"
+description = "Детектит изменения расписания на сайте УАвиаК'а и сохроняет его"
+authors = ["Gleb Liutsko <gleb@liutsko.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.27.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+uaviak-timetable-backuper = 'uaviak_timetable_backuper.__main__:main'
